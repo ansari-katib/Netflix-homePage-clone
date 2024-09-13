@@ -1,0 +1,398 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* images hero */
+
+.sign-hero-img {
+  position: relative;
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+
+}
+
+.sign-hidden {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.4;
+}
+
+@media (max-width: 650px) {
+  .sign-hero-img {
+    position: relative;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 80vh;
+    display: none;
+    
+  }
+
+  .sign-hidden {
+    width: 100%;
+    height: 80vh;
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.7;
+  }
+}
+
+/* nav */
+
+.sign-nav {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 15vh;
+  padding: 0 18vh;
+  padding-top: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* box-shadow:inset 0px 0px 0px Inner shadow at the bottom */
+}
+
+.sign-nav img {
+  height: 6vh;
+}
+
+.sign-nav {
+  background-color: transparent;
+}
+
+@media (max-width: 650px) {
+  
+.sign-nav {
+  position: absolute;
+  z-index: 111;
+  width: 100%;
+  height: 13vh;
+  padding: 0 6vh;
+  padding-top: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* box-shadow:inset 0px 0px 0px Inner shadow at the bottom */
+}
+
+.sign-nav img {
+  height: 4vh;
+}
+
+.sign-nav {
+  background-color: transparent;
+}
+}
+
+/* card */
+
+
+.sign-in-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+}
+.sign-in-card {
+  position: absolute;
+  z-index: 111;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.821);
+  margin-top: 75px;
+border-radius: 10px;
+}
+
+.sign-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin: 60px 70px;
+  background-color: rgba(10, 10, 10, 0.064);
+}
+
+.sign-card input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgba(36, 79, 197, 0.212);
+  color: white;
+  font-size: 20px;
+  border: 1px solid white;
+}
+
+.sign-btn-1 {
+  background-color: red;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size:20px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.fnt{
+    color: gray;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.fnt:hover{
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.sign-card .sign-btn {
+  background-color: rgba(162, 162, 162, 0.664);
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 7px;
+}
+
+.check-box  {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+.check-box input{
+    width: 20px;
+}
+
+.sign-card-text h3 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.sign-card-text p {
+    font-size: 15px;
+    font-weight: 400;
+
+}
+
+.sign-card-text a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.sign-card-text .blue{
+    color: rgb(115, 115, 255);
+}
+
+
+
+@media screen and (max-width:650px) {
+
+/* card */
+
+
+.sign-in-parent {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+}
+.sign-in-card {
+  position: absolute;
+  z-index: 111;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 80vh;
+}
+
+.sign-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 30px;
+  background-color: rgba(10, 10, 10, 0.064);
+}
+
+.sign-card input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(36, 83, 125, 0.514);
+  color: white;
+  font-size: 20px;
+  border: 1px solid white;
+}
+
+.sign-btn-1 {
+  background-color: red;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size:15px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.fnt{
+    color: gray;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 15px;
+
+}
+
+.sign-card .sign-btn {
+  background-color: rgba(162, 162, 162, 0.664);
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 7px;
+}
+
+.check-box  {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+.check-box input{
+    width: 15px;
+}
+
+.sign-card-text h3 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 4vw;
+}
+
+.sign-card-text p {
+    font-size: 3vw;
+    font-weight: 400;
+
+}
+
+.sign-card-text a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.sign-card-text .blue{
+    color: rgb(115, 115, 255);
+}
+
+    
+}
+
+/* footer */
+
+.center-footer {
+  padding: 100px 130px;
+  margin-top: -10px;
+  background-color: black;
+}
+
+.center-footer .top p {
+  font-size: 17px;
+  color: rgb(186, 186, 186);
+}
+
+.footer-child {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 50px;
+}
+
+.footer-child ul li {
+  margin-top: 10px;
+}
+
+.footer-child ul li a {
+  color: rgb(199, 195, 195);
+}
+
+/* select */
+
+.footer-ali {
+  margin-top: 50px;
+}
+
+.footer-text > h2 {
+  margin-top: 40px;
+  font-size: 15px;
+  padding-bottom: 50px;
+  color: rgb(114, 111, 111);
+}
+
+@media (max-width: 600px) {
+  .center-footer {
+    padding: 140px 30px;
+    margin-top: 30px;
+
+  }
+
+  .center-footer .top p {
+    font-size: 17px;
+    color: rgb(130, 130, 130);
+  }
+
+  .footer-child {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 5px;
+    margin-bottom: 0px;
+  }
+
+  .footer-child ul li {
+    margin-top: 10px;
+  }
+
+  .footer-child ul li a {
+    color: rgb(130, 130, 130);
+  }
+
+  /* select */
+
+  .footer-ali {
+    margin-top: 50px;
+  }
+
+  .footer-text h2 {
+    margin-top: 40px;
+    padding-bottom: 50px;
+    font-size: 15px;
+    color: rgb(114, 111, 111);
+  }
+
+  .enter-mob {
+    padding: 12px 70px;
+  }
+}
